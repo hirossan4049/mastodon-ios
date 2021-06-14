@@ -655,7 +655,7 @@ internal enum L10n {
         }
       }
       internal enum RelationshipActionAlert {
-        internal enum ConfirmUnblockUsre {
+        internal enum ConfirmUnblockUser {
           /// Confirm unblock %@
           internal static func message(_ p1: Any) -> String {
             return L10n.tr("Localizable", "Scene.Profile.RelationshipActionAlert.ConfirmUnblockUsre.Message", String(describing: p1))

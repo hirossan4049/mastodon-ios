@@ -597,7 +597,7 @@ extension StatusSection {
         cell.threadMetaView.dateLabel.accessibilityLabel = DateFormatter.localizedString(from: status.createdAt, dateStyle: .medium, timeStyle: .short)
         let reblogCountTitle: String = {
             let count = status.reblogsCount.intValue
-            if count > 1 {
+            if count == 0 || count > 1 {
                 return L10n.Scene.Thread.Reblog.multiple(String(count))
             } else {
                 return L10n.Scene.Thread.Reblog.single(String(count))
@@ -607,7 +607,7 @@ extension StatusSection {
         
         let favoriteCountTitle: String = {
             let count = status.favouritesCount.intValue
-            if count > 1 {
+            if count == 0 || count > 1 {
                 return L10n.Scene.Thread.Favorite.multiple(String(count))
             } else {
                 return L10n.Scene.Thread.Favorite.single(String(count))

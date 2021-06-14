@@ -847,8 +847,8 @@ extension ProfileViewController: ProfileHeaderViewDelegate {
                 guard let mastodonUser = viewModel.mastodonUser.value else { return }
                 let name = mastodonUser.displayNameWithFallback
                 let alertController = UIAlertController(
-                    title: L10n.Scene.Profile.RelationshipActionAlert.ConfirmUnblockUsre.title,
-                    message: L10n.Scene.Profile.RelationshipActionAlert.ConfirmUnblockUsre.message(name),
+                    title: L10n.Scene.Profile.RelationshipActionAlert.ConfirmUnblockUser.title,
+                    message: L10n.Scene.Profile.RelationshipActionAlert.ConfirmUnblockUser.message(name),
                     preferredStyle: .alert
                 )
                 let unblockAction = UIAlertAction(title: L10n.Common.Controls.Firendship.unblock, style: .default) { [weak self] _ in

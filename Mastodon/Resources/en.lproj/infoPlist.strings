@@ -1,2 +1,2 @@
-"NSCameraUsageDescription" = "Used to take photo for post status";
-"NSPhotoLibraryAddUsageDescription" = "Used to save photo into the Photo Library";
+"NSCameraUsageDescription" = "Used to take a photo for publishing a post";
+"NSPhotoLibraryAddUsageDescription" = "Used to save pictures into the Photo Library";
